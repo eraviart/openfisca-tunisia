@@ -187,12 +187,24 @@ Pour en savoir plus, voir [la section Tests](http://openfisca.org/doc/contribute
 
 ## Web API
 
-### API principale (en production)
+### API en production
 
-L'API principale est accessible sur [GitHub](https://github.com/openfisca/openfisca-web-api).
-Une [documentation générale des points de communication](http://openfisca.org/doc/openfisca-web-api/endpoints.html) est également à votre disposition.
+La dernière version de l'API en production est accessible à l'adresse suivante : 
+```
+https://www.openfisca.tn/api
+```
 
-### Nouvelle API (en développement)
+### Démarrer l'API en local
 
-La nouvelle API est intégrée au projet [GitHub du module central OpenFisca-Core](https://github.com/openfisca/openfisca-core).
+L'API peut être démarrée sur votre machine par cette ligne de commande :
+
+```sh
+openfisca serve --country-package openfisca_tunisia --port 5000
+```
+
+Vérifiez son exécution avec la commande :
+```sh
+curl http://localhost:5000/parameters
+```
+
 Pour en savoir plus, nous vous conseillons la lecture de la [documentation officielle de l'API Preview](http://openfisca.org/doc/openfisca-web-api/preview-api.html).
