@@ -85,8 +85,8 @@ class regime_securite_sociale(Variable):
     possible_values = TypesRegimeSecuriteSociale
     default_value = TypesRegimeSecuriteSociale.rsna
     entity = Individu
-    label = u"Régime de sécurité sociale du salarié"
-    definition_period = ETERNITY
+    label = u"Régime de sécurité sociale du salarié ou retraité"
+    definition_period = YEAR
 
 
 class cotisations_sociales(Variable):
