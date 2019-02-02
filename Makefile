@@ -1,5 +1,6 @@
 #!/bin/bash
 
+PORT=5000
 
 all: test
 
@@ -36,3 +37,7 @@ test: check-syntax-errors check-no-prints
 # pre-condition: pip install jupyter
 nb:
 	jupyter notebook demo.ipynb
+
+# pre-condition: pip install openfisca-core[web-api]
+api:
+	openfisca serve --country-package openfisca_tunisia --port ${PORT}
