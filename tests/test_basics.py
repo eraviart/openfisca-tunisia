@@ -1,8 +1,7 @@
 import pytest
 import datetime
 
-from openfisca_tunisia.model.prelevements_obligatoires.cotisations_sociales import TypesRegimeSecuriteSociale
-from openfisca_tunisia.model.base import *
+from openfisca_tunisia.variables.prelevements_obligatoires.cotisations_sociales import TypesRegimeSecuriteSociale
 from openfisca_tunisia.scenarios import init_single_entity
 from tests import base
 
